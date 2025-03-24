@@ -11,6 +11,9 @@ importers:
       cesium:
         specifier: ^1.127.0
         version: 1.127.0
+      cesium-plot-js:
+        specifier: ^0.0.6
+        version: 0.0.6
     devDependencies:
       vite:
         specifier: ^6.2.2
@@ -344,6 +347,9 @@ packages:
   bitmap-sdf@1.0.4:
     resolution: {integrity: sha512-1G3U4n5JE6RAiALMxu0p1XmeZkTeCwGKykzsLTCqVzfSDaN6S7fKnkIkfejogz+iwqBWc0UYAIKnKHNN7pSfDg==}
 
+  cesium-plot-js@0.0.6:
+    resolution: {integrity: sha512-SA5CySaHQcpiDiNGmP8DOibDGRRniFNVX8QGD5YsdpsKe6QgKXm1Fbhv+0ofeyUJGg9ySg1JZSZOo4dFPSacZw==}
+
   cesium@1.127.0:
     resolution: {integrity: sha512-MRGkPb3ClEkAI9viZxxdD3LCu7ydOzOKdJ6/iPtBx1GUsPCZNbgB0IH7wmhwgbxA5sjv4/a90+mvR9CoLP1PWQ==}
     engines: {node: '>=18.18.0'}
@@ -446,6 +452,12 @@ packages:
 
   lerc@2.0.0:
     resolution: {integrity: sha512-7qo1Mq8ZNmaR4USHHm615nEW2lPeeWJ3bTyoqFbd35DLx0LUH7C6ptt5FDCTAlbIzs3+WKrk5SkJvw8AFDE2hg==}
+
+  lodash.clonedeep@4.5.0:
+    resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
+
+  lodash.merge@4.6.2:
+    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
   long@5.3.1:
     resolution: {integrity: sha512-ka87Jz3gcx/I7Hal94xaN2tZEOPoUOEVftkQqZx2EeQRN7LGdfLlI3FvZ+7WDplm+vK2Urx9ULrvSowtdCieng==}
@@ -824,6 +836,11 @@ snapshots:
 
   bitmap-sdf@1.0.4: {}
 
+  cesium-plot-js@0.0.6:
+    dependencies:
+      lodash.clonedeep: 4.5.0
+      lodash.merge: 4.6.2
+
   cesium@1.127.0:
     dependencies:
       '@cesium/engine': 15.0.0
@@ -930,6 +947,10 @@ snapshots:
   ktx-parse@1.0.0: {}
 
   lerc@2.0.0: {}
+
+  lodash.clonedeep@4.5.0: {}
+
+  lodash.merge@4.6.2: {}
 
   long@5.3.1: {}
 
